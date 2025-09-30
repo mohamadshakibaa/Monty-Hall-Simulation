@@ -1,19 +1,21 @@
 import streamlit as st
-from src.main import simulate_game
 import time
+from src.main import simulate_game
 
-st.title("Dashboard for Monty holl ")
+# Title of the application
+st.title("Dashboard for Monty holl")
 
 number = st.number_input("Select your switch ", min_value=10, max_value=10000, value=100)
 
 col1, col2 = st.columns(2)
 
-col1.subheader("switch")
-col2.subheader("without switch")
+col1.subheader("Win Percentage Without Switching")
+col2.subheader("Win Percentage With Switching")
 
 chart1 = col1.line_chart(x=None, y=None, height=400)
 chart2 = col2.line_chart(x=None, y=None, height=400)
 
+# Create two lists to hold win percentages for both cases
 wins_no_switch = 0
 wins_switch = 0
 

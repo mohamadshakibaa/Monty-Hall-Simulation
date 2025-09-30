@@ -7,7 +7,7 @@ This implementation solves the famous Monty Hall problem, presenting an interact
 ├─ README.md
 ├─ requirements.txt
 └─ src
-   ├─ monty_hall.py
+   ├─ main.py
    └─ app.py
 ```
 - `README.md`: This descriptive file
